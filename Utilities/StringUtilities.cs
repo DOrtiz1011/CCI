@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrackingTheCodingInterview
 {
-    static class Utilities
+    static class StringUtilities
     {
         public static char[] CreateSortedCharArrayFromString(string s)
         {

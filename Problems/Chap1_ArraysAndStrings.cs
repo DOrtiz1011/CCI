@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CrackingTheCodingInterview
+namespace CrackingTheCodingInterview.Problems
 {
-    /// <summary>
-    /// Chapter 1 Problems from Cracking the Coding Interview 6th Edition
-    /// </summary>
     static class Chap1_ArraysAndStrings
     {
         public static bool Prob1_IsUnique(string testString)
@@ -26,7 +19,7 @@ namespace CrackingTheCodingInterview
             else
             {
                 // create sorted char array
-                var charArray = Utilities.CreateSortedCharArrayFromString(testString);
+                var charArray = StringUtilities.CreateSortedCharArrayFromString(testString);
 
                 for (var index = 0; index < charArray.Length - 1; index++)
                 {
@@ -47,7 +40,7 @@ namespace CrackingTheCodingInterview
 
             if (string1.Length == string2.Length)
             {
-                var dictionary = Utilities.CountCharsInString(string1, true);
+                var dictionary = StringUtilities.CountCharsInString(string1, true);
 
                 // loop through the second string and remove the chars from the dictionary
                 foreach (char character in string2.ToLower().ToCharArray())
@@ -126,7 +119,7 @@ namespace CrackingTheCodingInterview
         public static bool Prob4_PalindromePermutation(string testString)
         {
             var isPalindromePermutation = true;
-            var dictionary = Utilities.CountCharsInString(testString, false);
+            var dictionary = StringUtilities.CountCharsInString(testString, false);
             var numOdd = 0;
 
             foreach (var keyValuePair in dictionary)
