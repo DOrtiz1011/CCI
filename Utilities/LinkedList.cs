@@ -9,7 +9,24 @@ namespace CrackingTheCodingInterview.Utilities
         public LinkedListNode Tail { get; private set; }
         public int Count { get; private set; }
 
-        public void AddNode(int data)
+        public void AddNodeToHead(int data)
+        {
+            if (Head == null && Tail == null)
+            {
+                // empty list add new head
+                Head = new LinkedListNode(null, null, data);
+                Tail = Head;   // only one node so head and tail are the same
+                Count++;
+            }
+            else
+            {
+                var newNode = new LinkedListNode(null, null, data);
+                newNode.NextNode = Head;
+                Head.PreviousNode = newNode;
+            }
+        }
+
+        public void AddNodeToTail(int data)
         {
             if (Head == null && Tail == null)
             {

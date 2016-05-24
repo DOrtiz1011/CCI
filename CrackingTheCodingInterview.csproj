@@ -61,10 +61,15 @@
   <ItemGroup>
     <Compile Include="Problems\Chap1_ArraysAndStrings.cs" />
     <Compile Include="Problems\Chap2_LinkedLists.cs" />
+    <Compile Include="Problems\Chap3_StacksAndQueues.cs" />
+    <Compile Include="Problems\Chap4_TreesAndGraphs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Graph.cs" />
+    <Compile Include="Utilities\GraphNode.cs" />
     <Compile Include="Utilities\LinkedList.cs" />
     <Compile Include="Utilities\LinkedListNode.cs" />
+    <Compile Include="Utilities\MyStack.cs" />
     <Compile Include="Utilities\StringUtilities.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using CrackingTheCodingInterview.Problems;
+using CrackingTheCodingInterview.Utilities;
 
 namespace CrackingTheCodingInterview
 {
@@ -8,7 +10,8 @@ namespace CrackingTheCodingInterview
         static void Main()
         {
             //Chapter1();
-            Chapter2();
+            //Chapter2();
+            Chapter4();
         }
 
         static void Chapter1()
@@ -21,8 +24,6 @@ namespace CrackingTheCodingInterview
 
         static void Chapter2()
         {
-
-
             //linkedList.PrintLinkedList();
             //Chap2_LinkedLists.Prob1_RemoveDups(Chap2_LinkedLists.CreateTestLinkedList1());
             //linkedList.PrintLinkedList();
@@ -33,6 +34,13 @@ namespace CrackingTheCodingInterview
             Chap2_LinkedLists.Prob5_SumLists(Chap2_LinkedLists.CreateTestLinkedList1(), Chap2_LinkedLists.CreateTestLinkedList2());
 
             Console.ReadLine();
+        }
+
+        static void Chapter4()
+        {
+            var graph = new Graph(true);
+
+            Chap4_TreesAndGraphs.Prob1_RouteBetweenNodes(graph, graph.Nodes.First(), graph.Nodes.Last());
         }
     }
 }

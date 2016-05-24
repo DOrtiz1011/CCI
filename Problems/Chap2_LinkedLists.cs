@@ -11,13 +11,13 @@ namespace CrackingTheCodingInterview.Problems
         {
             var linkedList = new LinkedList();
 
-            linkedList.AddNode(1);
-            linkedList.AddNode(1);
-            linkedList.AddNode(3);
-            linkedList.AddNode(3);
-            linkedList.AddNode(4);
-            linkedList.AddNode(6);
-            linkedList.AddNode(6);
+            linkedList.AddNodeToTail(1);
+            linkedList.AddNodeToTail(1);
+            linkedList.AddNodeToTail(3);
+            linkedList.AddNodeToTail(3);
+            linkedList.AddNodeToTail(4);
+            linkedList.AddNodeToTail(6);
+            linkedList.AddNodeToTail(6);
 
             return linkedList;
         }
@@ -26,15 +26,15 @@ namespace CrackingTheCodingInterview.Problems
         {
             var linkedList = new LinkedList();
 
-            linkedList.AddNode(10);
-            linkedList.AddNode(21);
-            linkedList.AddNode(2);
-            linkedList.AddNode(33);
-            linkedList.AddNode(5);
-            linkedList.AddNode(84);
-            linkedList.AddNode(65);
-            linkedList.AddNode(56);
-            linkedList.AddNode(16);
+            linkedList.AddNodeToTail(10);
+            linkedList.AddNodeToTail(21);
+            linkedList.AddNodeToTail(2);
+            linkedList.AddNodeToTail(33);
+            linkedList.AddNodeToTail(5);
+            linkedList.AddNodeToTail(84);
+            linkedList.AddNodeToTail(65);
+            linkedList.AddNodeToTail(56);
+            linkedList.AddNodeToTail(16);
 
             return linkedList;
         }
